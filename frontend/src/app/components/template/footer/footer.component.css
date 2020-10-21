@@ -1,0 +1,17 @@
+.footer {
+    font-size: 15px;
+    height: 20px;
+    position : fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color:black;
+}
+
+.footer .copyright {
+    position: center;
+    height: 20px;
+    color:white;
+    
+}
+

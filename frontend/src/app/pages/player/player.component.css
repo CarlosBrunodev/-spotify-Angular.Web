@@ -1,0 +1,101 @@
+/*CSS sidenav*/
+.sidenav{
+    background-color: #000000;
+    width: 200px;
+}
+
+.sidenav a{
+    color:#fff;
+}
+
+.sidenav i{
+    padding-right: 10px;
+}
+
+.sidenav .end{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color:#ece3e399;
+}
+/*CSS do card*/
+.example-card {
+    margin-left: 210px;
+    max-width: 180px;
+    max-height: 100px;
+    
+}
+  
+button{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.seguir {
+    position: absolute;
+	top: 35px;
+    margin-top: -1px;
+    margin-left: 390px;
+
+}
+
+*{
+    background-color: black;
+}
+
+.title{
+     color:white;
+     font-size: 4px;
+}
+
+.title .banda{
+     font-size: 50px;
+     margin-top: 37px;
+}
+
+/*css da tabela*/
+table{
+    width: 65%;
+}
+
+.edit{
+    margin-right: 10px;
+}
+
+.edit > i{
+    color:#008700;
+}
+
+.delete > i{
+    color:#c70a00;
+}
+
+.table-table-striped{
+    background-color: white;
+}
+
+th{
+    background-color:#0f0e0e;
+    color:white;
+    border-bottom: gray;
+}
+
+td{
+    background-color:black;
+    color:white;
+    border-bottom: gray;
+}
+
+h2{
+    padding-top: 1px;
+}
+
+.full-width-table{
+    margin-top: 81px;
+    margin-left: 250px;
+}
+
+.audio{
+    margin-left:200px;
+    position:absolute;
+    top:80%;
+}

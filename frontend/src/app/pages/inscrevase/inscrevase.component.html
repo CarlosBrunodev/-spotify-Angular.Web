@@ -1,0 +1,78 @@
+<!--<div class="containerplay">
+    <img src="assets/img/gif.gif"  width="5" class="card-img-top" alt="capa1">
+</div>-->
+<div class="corpo">
+<mat-sidenav-container >
+    <!--class="container"-->
+<mat-sidenav class="sidenav" mode="side" opened
+    fixedInViewport="true" fixedTopGap="63">
+        
+        <mat-nav-list class="nav-list">
+           
+            <a mat-list-item>
+                <i class="material-icons">
+                    home <!--Aqui se referencia o icon utiizado no elemento-->
+                </i>
+                <a routerLink="/Home">Home</a>&nbsp; 
+            </a>
+            
+            <a mat-list-item>
+                <i class="material-icons">
+                    search
+                </i>
+                    Search
+            </a>
+            
+            <a mat-list-item>
+                <i class="material-icons">
+                    folder
+                </i>
+                    Your library
+            </a>
+
+            <a mat-list-item>
+                 <i class="material-icons">
+                        playlist_add
+                    </i>
+                        PlayList      
+            </a>
+
+            <div class="end"></div>
+            
+        </mat-nav-list>
+    </mat-sidenav>
+</mat-sidenav-container>
+<div class="title">
+    <h1>As melhores playlists</h1>
+</div>
+<div class="card-group">
+    <div class="card">
+      <img src="assets/img/capa1.png" height="200" width="50" class="card-img-top" alt="capa1">
+      <div class="card-body">
+        <h5 class="card-title">Pop Rock</h5>
+        <p class="card-text">O melhor do pop rock com mais de 100 musicas disponiveis para voce</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/capa2.png" height="200" width="50" class="card-img-top" alt="capa2">
+      <div class="card-body">
+        <h5 class="card-title">Internacional</h5>
+        <p class="card-text">As musicas internacionais mais ouvidas pelo mundo.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img routerLink="/player"src="assets/img/red.png"  height="200" width="50" class="card-img-top" alt="capa3">
+      <div class="card-body">
+        <h5 class="card-title">RCHP</h5>
+        <p class="card-text">O melhor de RedHotChilPeppers em uma playlist repleta de sucessos.</p>
+      </div>
+    </div>
+    <div class="card">
+        <img src="assets/img/capa0.gif" height="200" width="50" class="card-img-top" alt="capa2">
+        <div class="card-body">
+          <h5 class="card-title">Rock</h5>
+          <p class="card-text">O melhor do rock anos 90.</p>
+        </div>
+      </div>
+  </div>
+</div>

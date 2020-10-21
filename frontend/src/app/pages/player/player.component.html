@@ -1,0 +1,87 @@
+<!--parte referente ao corpo-->
+<div class="body">
+    <mat-card class="example-card">
+        <img mat-card-image src="assets/img/red.png" height="150" width="200" alt="music">
+    </mat-card>
+    <mat-card-actions class="seguir">
+        <div class="title">
+            <h1>Playlist</h1>
+            <h2 class="banda">Red Hot Chili Peppers</h2>
+        </div>
+        <button class="btn btn-primary" type="button" routerLink="">Ordem aleatória</button>
+        <button class="btn btn-primary" type="button" routerLink="">Seguir</button>
+        <audio controls class="audio">
+            <source src="../../../assets/musica.mp3" type="audio/mp3"> 
+        </audio>
+    </mat-card-actions>
+    <!--Parte referente a sidenav-->
+    <mat-sidenav-container>
+        <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="63">
+            <!--<mat-sidenav class="sidenav" mode="side" opened>-->
+
+            <mat-nav-list class="nav-list">
+
+                <a mat-list-item>
+                    <i class="material-icons">
+                        home
+                        <!--Aqui se referencia o icon utiizado no elemento-->
+                    </i>
+                    <a routerLink="/Home">Home</a>&nbsp;
+                </a>
+
+                <a mat-list-item>
+                    <i class="material-icons">
+                        search
+                    </i>
+                    Search
+                </a>
+
+                <a mat-list-item>
+                    <i class="material-icons">
+                        folder
+                    </i>
+                    Your library
+                </a>
+
+                <a mat-list-item>
+                    <i class="material-icons">
+                        playlist_add
+                    </i>
+                    PlayList
+                </a>
+
+                <div class="end"></div>
+
+            </mat-nav-list>
+        </mat-sidenav>
+    </mat-sidenav-container>
+   
+    <!--Parte referente a table-->
+    <div class="mat-elevation-z8">
+        <table mat-table class="full-width-table" matSort aria-label="Elements">
+            <!-- Id Column -->
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                <td mat-cell *matCellDef="let row">{{row.id}}</td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+                <td mat-cell *matCellDef="let row">{{row.name}}</td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="autor">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Autor</th>
+                <td mat-cell *matCellDef="let row">{{row.name}}</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    
+        <mat-paginator #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="6"
+            [pageSizeOptions]="[5, 10, 15, 20]">
+        </mat-paginator>
+    </div>
