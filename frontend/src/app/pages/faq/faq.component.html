@@ -1,233 +1,100 @@
 <div class="tab-content">
     <div class="tab-pane active" id="inbox">
-        
         <div class="container">
-             <div class="content-container clearfix">
-                 <div class="col-md-12">
-                     <h1 class="content-title">Duvidas frequentes</h1>
-                     
-                     <input type="search" placeholder="Search" class="form-control mail-search" />
-                     
-                     <ul class="mail-list">
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">Sem som</span>
-                                 <span class="mail-subject">O play nao reproduz o audio</span>
-                                 <span class="mail-message-preview">Nesse tipo de caso , é necessario que o usuario verifique que o dispositivo onde foi instalado esta com todos os acessos liberados .</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">Som travado</span>
-                                 <span class="mail-subject">Faixa apresentam falhas durante reprodução</span>
-                                 <span class="mail-message-preview">Para falhas durante a reprodução da musica ,verificar a conexão com a internet</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">Sem acesso</span>
-                                 <span class="mail-subject">Erro de sistema </span>
-                                 <span class="mail-message-preview">Nesse caso é necessario que o usuario faça o processo de instalação novamente , pois possivel erro aconteceu durante a instalação </span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">Pasta inexistente</span>
-                                 <span class="mail-subject">Artistas ou pastas desconhecidas</span>
-                                 <span class="mail-message-preview">Verifique o nome dos arquivos e tente novamente</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">Favoritos</span>
-                                 <span class="mail-subject">Nao consigo achar as musicas curtidas</span>
-                                 <span class="mail-message-preview">Na barra de navegaçao , procure pela pasta musicas favoritas</span>
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-        
+            <div class="content-container clearfix">
+                <div class="col-md-12">
+                    <h1 class="content-title">Duvidas frequentes</h1>
+                    <input type="search" placeholder="Search" class="form-control mail-search" />
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        01.) Sem som (O player nao reproduz o audio)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Nesse tipo de caso , é necessario que o usuario verifique que o dispositivo onde foi
+                                    instalado esta com todos os acessos liberados .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        02.) Som travado (Faixa apresenta falhas durante a reprodução)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Para falhas durante a reprodução da musica ,verificar a conexão com a internet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        03.) Sem acesso (Erro de sistema!)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Nesse caso é necessario que o usuario faça o processo de instalação novamente , pois
+                                    possivel erro aconteceu durante a instalação.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        04.) Pasta inexistente (Artistas ou pastas desconhecidas)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Verifique o nome dos arquivos e tente novamente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        05.) Favoritos ( Nao consigo achar minhas musicas favoritas.)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Na barra de navegaçao , procure pela pasta musicas favoritas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="tab-pane" id="compose">
-        
-        <div class="container">
-      <div class="content-container clearfix">
-          <h1 class="content-title">Compose</h1>
-          <div class="col-md-12">
-              <div class="form-group">
-                  <input id="tokenfield" type="text" class="form-control" placeholder="To" />
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Cc" />
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Bcc" />
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject" />
-              </div>
-              <textarea class="form-control" placeholder="message"></textarea>
-              <div class="btn-send">
-              <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> Send</button>
-              </div>
-          </div>
-      </div>
-  </div>
-        
-    </div>
-    <div class="tab-pane" id="sent-mail">
-        
-        <div class="container">
-             <div class="content-container clearfix">
-                 <div class="col-md-12">
-                     <h1 class="content-title">Sent Mail</h1>
-                     
-                     <input type="search" placeholder="Search Mail" class="form-control mail-search" />
-                     
-                     <ul class="mail-list">
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">You have ten more subscriptions click her...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-        
-    </div>
-    <div class="tab-pane" id="draft">
-        
-        <div class="container">
-             <div class="content-container clearfix">
-                 <div class="col-md-12">
-                     <h1 class="content-title">Draft</h1>
-                     
-                     <input type="search" placeholder="Search Mail" class="form-control mail-search" />
-                     
-                     <ul class="mail-list">
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">You have ten more subscriptions click her...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-        
-    </div>
-    <div class="tab-pane" id="trash">
-        
-        <div class="container">
-             <div class="content-container clearfix">
-                 <div class="col-md-12">
-                     <h1 class="content-title">Trash</h1>
-                     
-                     <input type="search" placeholder="Search Mail" class="form-control mail-search" />
-                     
-                     <ul class="mail-list">
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">You have ten more subscriptions click her...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="">
-                                 <span class="mail-sender">You Tube</span>
-                                 <span class="mail-subject">New subscribers!</span>
-                                 <span class="mail-message-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet ipsum nisi? Eaque odio quae debitis saepe explicabo alias sit tenetur animi...</span>
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-        
-    </div>
-  </div>
